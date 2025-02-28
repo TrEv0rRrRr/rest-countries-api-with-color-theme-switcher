@@ -1,11 +1,17 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Main from "./components/Main";
-
+import CountryDetails from "./pages/CountryDetails";
+import Main from "./pages/Main";
 function App() {
   return (
     <>
       <Header />
-      <Main />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/country/:name" element={<CountryDetails />} />
+        </Routes>
+      </Router>
     </>
   );
 }

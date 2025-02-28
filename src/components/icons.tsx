@@ -1,3 +1,7 @@
+type Props = {
+  styles: string;
+};
+
 export const Moon = () => {
   return (
     <svg
@@ -36,10 +40,6 @@ export const Sun = () => {
   );
 };
 
-type Props = {
-  styles: string;
-};
-
 export const MagnifyingGlass = ({ styles }: Props) => {
   return (
     <svg
@@ -54,6 +54,25 @@ export const MagnifyingGlass = ({ styles }: Props) => {
         strokeLinecap="round"
         strokeLinejoin="round"
         d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+      />
+    </svg>
+  );
+};
+
+export const ArrowLeft = ({ styles }: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={styles}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
       />
     </svg>
   );
