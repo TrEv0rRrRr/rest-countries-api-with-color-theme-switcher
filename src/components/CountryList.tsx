@@ -17,7 +17,8 @@ const CountryList = ({ countries }: Props) => {
         return (
           <section
             key={index}
-            className="bg-DM-Elements rounded-md shadow-lg hover:bg-DM-Elements/40 cursor-pointer hover:scale-110 transition-all"
+            className="rounded-md shadow-xl bg-LM-Elements dark:bg-DM-Elements hover:bg-DM-Elements/10 
+            dark:hover:bg-LM-Elements/10 cursor-pointer hover:scale-110 transition-all"
             onClick={() =>
               navigate(`/country/${name}`, {
                 state: {
