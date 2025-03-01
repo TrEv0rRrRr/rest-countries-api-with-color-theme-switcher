@@ -5,14 +5,13 @@
   /* DARK MODE */
   --color-DM-Elements: hsl(209, 23%, 22%);
   --color-DM-Bg: hsl(207, 26%, 17%);
-
-  /* WHITE */
-  --color-DM-Text-LM-Elements: hsl(0, 0%, 100%);
+  --color-DM-Text: hsl(0, 0%, 100%);
 
   /* LIGHT MODE */
   --color-LM-Text: hsl(200, 15%, 8%);
   --color-LM-Input: hsl(0, 0%, 52%);
   --color-LM-Bg: hsl(0, 0%, 98%);
+  --color-LM-Elements: hsl(0, 0%, 100%);
 
   /* FONT STYLES */
   --font-Nunito: "Nunito Sans";
@@ -22,3 +21,5 @@
 
   --text-homepage-items: 0.875rem;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
