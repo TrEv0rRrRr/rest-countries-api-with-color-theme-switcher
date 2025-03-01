@@ -6,7 +6,7 @@ export default function ThemeProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light";
@@ -15,9 +15,9 @@ export default function ThemeProvider({
   }, []);
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
+    const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    document.documentElement.classList.remove("dark", "light");
+    document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(newTheme);
     localStorage.setItem("theme", newTheme);
   };

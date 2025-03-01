@@ -6,6 +6,6 @@ export type ThemeContextProps = {
 };
 
 export const ThemeContext = createContext<ThemeContextProps>({
-  theme: "dark",
+  theme: "light",
   toggleTheme: () => {},
 });
